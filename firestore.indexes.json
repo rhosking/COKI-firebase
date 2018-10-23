@@ -1,0 +1,36 @@
+{
+  "indexes": [
+    {
+      "collectionId": "institutions",
+      "state": "READY",
+      "fields": [
+        {
+          "fieldPath": "state",
+          "mode": "ASCENDING"
+        },
+        {
+          "fieldPath": "lastUpdated",
+          "mode": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionId": "tasks",
+      "state": "READY",
+      "fields": [
+        {
+          "fieldPath": "source",
+          "mode": "ASCENDING"
+        },
+        {
+          "fieldPath": "state",
+          "mode": "ASCENDING"
+        },
+        {
+          "fieldPath": "created",
+          "mode": "ASCENDING"
+        }
+      ]
+    }
+  ]
+}
