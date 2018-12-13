@@ -1,0 +1,1922 @@
+[
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 272; errors: 1. Please look into the error stream for more details."
+      },
+      "authenticationInfo": {
+        "principalEmail": "coki-214004@appspot.gserviceaccount.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2600:1900:2000:38:400::1b",
+        "callerSuppliedUserAgent": "gcloud-python/0.28.1,gzip(gfe)"
+      },
+      "serviceName": "bigquery.googleapis.com",
+      "methodName": "jobservice.jobcompleted",
+      "resourceName": "projects/coki-214004/jobs/56009cea-960d-49fc-b2cb-f5082e841b27",
+      "serviceData": {
+        "@type": "type.googleapis.com/google.cloud.bigquery.logging.v1.AuditData",
+        "jobCompletedEvent": {
+          "eventName": "load_job_completed",
+          "job": {
+            "jobName": {
+              "projectId": "coki-214004",
+              "jobId": "56009cea-960d-49fc-b2cb-f5082e841b27",
+              "location": "US"
+            },
+            "jobConfiguration": {
+              "load": {
+                "sourceUris": [
+                  "gs://coki-parsed-doi/v1/grid.4305.2/wos/2008-08/2018-11-27 15:16:06.894621+00:00_3d5487bf-1eb8-4108-9ce2-c8f214e72328.csv"
+                ],
+                "destinationTable": {
+                  "projectId": "coki-214004",
+                  "datasetId": "institutions",
+                  "tableId": "raw_prod"
+                },
+                "createDisposition": "CREATE_IF_NEEDED",
+                "writeDisposition": "WRITE_APPEND",
+                "schemaJson": "{\n  \"fields\": [{\n    \"name\": \"doi\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"grid_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"month\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"first_lookup\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }]\n}"
+              }
+            },
+            "jobStatus": {
+              "state": "DONE",
+              "error": {
+                "code": 3,
+                "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 272; errors: 1. Please look into the error stream for more details."
+              },
+              "additionalErrors": [
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 272; errors: 1. Please look into the error stream for more details."
+                },
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: Too many values in row starting at position: 50862."
+                }
+              ]
+            },
+            "jobStatistics": {
+              "createTime": "2018-11-27T15:16:16.477Z",
+              "startTime": "2018-11-27T15:16:17.014Z",
+              "endTime": "2018-11-27T15:16:17.580Z"
+            }
+          }
+        }
+      }
+    },
+    "insertId": "x0otx5e5k5d8",
+    "resource": {
+      "type": "bigquery_resource",
+      "labels": {
+        "project_id": "coki-214004"
+      }
+    },
+    "timestamp": "2018-11-27T15:16:17.588Z",
+    "severity": "ERROR",
+    "logName": "projects/coki-214004/logs/cloudaudit.googleapis.com%2Fdata_access",
+    "receiveTimestamp": "2018-11-27T15:16:18.159058643Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 40; errors: 1. Please look into the error stream for more details."
+      },
+      "authenticationInfo": {
+        "principalEmail": "coki-214004@appspot.gserviceaccount.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2600:1900:2000:38:400::1b",
+        "callerSuppliedUserAgent": "gcloud-python/0.28.1,gzip(gfe)"
+      },
+      "serviceName": "bigquery.googleapis.com",
+      "methodName": "jobservice.jobcompleted",
+      "resourceName": "projects/coki-214004/jobs/08d11c4b-2da3-488a-9623-f051877555e5",
+      "serviceData": {
+        "@type": "type.googleapis.com/google.cloud.bigquery.logging.v1.AuditData",
+        "jobCompletedEvent": {
+          "eventName": "load_job_completed",
+          "job": {
+            "jobName": {
+              "projectId": "coki-214004",
+              "jobId": "08d11c4b-2da3-488a-9623-f051877555e5",
+              "location": "US"
+            },
+            "jobConfiguration": {
+              "load": {
+                "sourceUris": [
+                  "gs://coki-parsed-doi/v1/grid.4305.2/wos/2007-11/2018-11-27 15:07:06.161231+00:00_1c1ac2b0-6af9-4776-b5cf-199f830d3f35.csv"
+                ],
+                "destinationTable": {
+                  "projectId": "coki-214004",
+                  "datasetId": "institutions",
+                  "tableId": "raw_prod"
+                },
+                "createDisposition": "CREATE_IF_NEEDED",
+                "writeDisposition": "WRITE_APPEND",
+                "schemaJson": "{\n  \"fields\": [{\n    \"name\": \"doi\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"grid_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"month\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"first_lookup\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }]\n}"
+              }
+            },
+            "jobStatus": {
+              "state": "DONE",
+              "error": {
+                "code": 3,
+                "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 40; errors: 1. Please look into the error stream for more details."
+              },
+              "additionalErrors": [
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 40; errors: 1. Please look into the error stream for more details."
+                },
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: Too many values in row starting at position: 7370."
+                }
+              ]
+            },
+            "jobStatistics": {
+              "createTime": "2018-11-27T15:07:14.952Z",
+              "startTime": "2018-11-27T15:07:15.486Z",
+              "endTime": "2018-11-27T15:07:16.388Z"
+            }
+          }
+        }
+      }
+    },
+    "insertId": "-y4bby4e63ayl",
+    "resource": {
+      "type": "bigquery_resource",
+      "labels": {
+        "project_id": "coki-214004"
+      }
+    },
+    "timestamp": "2018-11-27T15:07:16.401Z",
+    "severity": "ERROR",
+    "logName": "projects/coki-214004/logs/cloudaudit.googleapis.com%2Fdata_access",
+    "receiveTimestamp": "2018-11-27T15:07:16.658451194Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 13; errors: 1. Please look into the error stream for more details."
+      },
+      "authenticationInfo": {
+        "principalEmail": "coki-214004@appspot.gserviceaccount.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2600:1900:2000:38:400::1b",
+        "callerSuppliedUserAgent": "gcloud-python/0.28.1,gzip(gfe)"
+      },
+      "serviceName": "bigquery.googleapis.com",
+      "methodName": "jobservice.jobcompleted",
+      "resourceName": "projects/coki-214004/jobs/9d3960f3-7893-415e-8e87-a07eb127a81c",
+      "serviceData": {
+        "@type": "type.googleapis.com/google.cloud.bigquery.logging.v1.AuditData",
+        "jobCompletedEvent": {
+          "eventName": "load_job_completed",
+          "job": {
+            "jobName": {
+              "projectId": "coki-214004",
+              "jobId": "9d3960f3-7893-415e-8e87-a07eb127a81c",
+              "location": "US"
+            },
+            "jobConfiguration": {
+              "load": {
+                "sourceUris": [
+                  "gs://coki-parsed-doi/v1/grid.9486.3/wos/2018-10/2018-11-27 13:13:03.929188+00:00_88dcf05d-775e-44c9-ac35-4cdd9bb4c642.csv"
+                ],
+                "destinationTable": {
+                  "projectId": "coki-214004",
+                  "datasetId": "institutions",
+                  "tableId": "raw_prod"
+                },
+                "createDisposition": "CREATE_IF_NEEDED",
+                "writeDisposition": "WRITE_APPEND",
+                "schemaJson": "{\n  \"fields\": [{\n    \"name\": \"doi\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"grid_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"month\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"first_lookup\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }]\n}"
+              }
+            },
+            "jobStatus": {
+              "state": "DONE",
+              "error": {
+                "code": 3,
+                "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 13; errors: 1. Please look into the error stream for more details."
+              },
+              "additionalErrors": [
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 13; errors: 1. Please look into the error stream for more details."
+                },
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: Too many values in row starting at position: 2290."
+                }
+              ]
+            },
+            "jobStatistics": {
+              "createTime": "2018-11-27T13:13:13.734Z",
+              "startTime": "2018-11-27T13:13:14.184Z",
+              "endTime": "2018-11-27T13:13:14.879Z"
+            }
+          }
+        }
+      }
+    },
+    "insertId": "w70e60e6vync",
+    "resource": {
+      "type": "bigquery_resource",
+      "labels": {
+        "project_id": "coki-214004"
+      }
+    },
+    "timestamp": "2018-11-27T13:13:14.886Z",
+    "severity": "ERROR",
+    "logName": "projects/coki-214004/logs/cloudaudit.googleapis.com%2Fdata_access",
+    "receiveTimestamp": "2018-11-27T13:13:15.845731301Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 374; errors: 1. Please look into the error stream for more details."
+      },
+      "authenticationInfo": {
+        "principalEmail": "coki-214004@appspot.gserviceaccount.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2600:1900:2000:38:400::1b",
+        "callerSuppliedUserAgent": "gcloud-python/0.28.1,gzip(gfe)"
+      },
+      "serviceName": "bigquery.googleapis.com",
+      "methodName": "jobservice.jobcompleted",
+      "resourceName": "projects/coki-214004/jobs/4127e277-b9c7-4d01-8aa1-2b5e810ea39f",
+      "serviceData": {
+        "@type": "type.googleapis.com/google.cloud.bigquery.logging.v1.AuditData",
+        "jobCompletedEvent": {
+          "eventName": "load_job_completed",
+          "job": {
+            "jobName": {
+              "projectId": "coki-214004",
+              "jobId": "4127e277-b9c7-4d01-8aa1-2b5e810ea39f",
+              "location": "US"
+            },
+            "jobConfiguration": {
+              "load": {
+                "sourceUris": [
+                  "gs://coki-parsed-doi/v1/grid.9486.3/wos/2018-07/2018-11-27 13:10:04.556855+00:00_132068ad-90b4-423e-a3a8-917aaecbb571.csv"
+                ],
+                "destinationTable": {
+                  "projectId": "coki-214004",
+                  "datasetId": "institutions",
+                  "tableId": "raw_prod"
+                },
+                "createDisposition": "CREATE_IF_NEEDED",
+                "writeDisposition": "WRITE_APPEND",
+                "schemaJson": "{\n  \"fields\": [{\n    \"name\": \"doi\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"grid_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"month\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"first_lookup\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }]\n}"
+              }
+            },
+            "jobStatus": {
+              "state": "DONE",
+              "error": {
+                "code": 3,
+                "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 374; errors: 1. Please look into the error stream for more details."
+              },
+              "additionalErrors": [
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 374; errors: 1. Please look into the error stream for more details."
+                },
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: Too many values in row starting at position: 71797."
+                }
+              ]
+            },
+            "jobStatistics": {
+              "createTime": "2018-11-27T13:10:15.575Z",
+              "startTime": "2018-11-27T13:10:16.111Z",
+              "endTime": "2018-11-27T13:10:16.653Z"
+            }
+          }
+        }
+      }
+    },
+    "insertId": "7hqyn4e43mhy",
+    "resource": {
+      "type": "bigquery_resource",
+      "labels": {
+        "project_id": "coki-214004"
+      }
+    },
+    "timestamp": "2018-11-27T13:10:16.664Z",
+    "severity": "ERROR",
+    "logName": "projects/coki-214004/logs/cloudaudit.googleapis.com%2Fdata_access",
+    "receiveTimestamp": "2018-11-27T13:10:17.314433991Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 344; errors: 1. Please look into the error stream for more details."
+      },
+      "authenticationInfo": {
+        "principalEmail": "coki-214004@appspot.gserviceaccount.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2600:1900:2000:38:400::1b",
+        "callerSuppliedUserAgent": "gcloud-python/0.28.1,gzip(gfe)"
+      },
+      "serviceName": "bigquery.googleapis.com",
+      "methodName": "jobservice.jobcompleted",
+      "resourceName": "projects/coki-214004/jobs/3353641a-0301-428b-aed6-2971dd3e77e8",
+      "serviceData": {
+        "@type": "type.googleapis.com/google.cloud.bigquery.logging.v1.AuditData",
+        "jobCompletedEvent": {
+          "eventName": "load_job_completed",
+          "job": {
+            "jobName": {
+              "projectId": "coki-214004",
+              "jobId": "3353641a-0301-428b-aed6-2971dd3e77e8",
+              "location": "US"
+            },
+            "jobConfiguration": {
+              "load": {
+                "sourceUris": [
+                  "gs://coki-parsed-doi/v1/grid.9486.3/wos/2017-04/2018-11-27 13:02:06.653009+00:00_e34e36c8-66b4-46fc-9352-c584b73ba3cb.csv"
+                ],
+                "destinationTable": {
+                  "projectId": "coki-214004",
+                  "datasetId": "institutions",
+                  "tableId": "raw_prod"
+                },
+                "createDisposition": "CREATE_IF_NEEDED",
+                "writeDisposition": "WRITE_APPEND",
+                "schemaJson": "{\n  \"fields\": [{\n    \"name\": \"doi\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"grid_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"month\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"first_lookup\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }]\n}"
+              }
+            },
+            "jobStatus": {
+              "state": "DONE",
+              "error": {
+                "code": 3,
+                "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 344; errors: 1. Please look into the error stream for more details."
+              },
+              "additionalErrors": [
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 344; errors: 1. Please look into the error stream for more details."
+                },
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: Too many values in row starting at position: 64239."
+                }
+              ]
+            },
+            "jobStatistics": {
+              "createTime": "2018-11-27T13:02:16.471Z",
+              "startTime": "2018-11-27T13:02:17.010Z",
+              "endTime": "2018-11-27T13:02:17.482Z"
+            }
+          }
+        }
+      }
+    },
+    "insertId": "ofbwoxe55dvz",
+    "resource": {
+      "type": "bigquery_resource",
+      "labels": {
+        "project_id": "coki-214004"
+      }
+    },
+    "timestamp": "2018-11-27T13:02:17.491Z",
+    "severity": "ERROR",
+    "logName": "projects/coki-214004/logs/cloudaudit.googleapis.com%2Fdata_access",
+    "receiveTimestamp": "2018-11-27T13:02:17.945476298Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 86; errors: 1. Please look into the error stream for more details."
+      },
+      "authenticationInfo": {
+        "principalEmail": "coki-214004@appspot.gserviceaccount.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2600:1900:2000:38:400::1b",
+        "callerSuppliedUserAgent": "gcloud-python/0.28.1,gzip(gfe)"
+      },
+      "serviceName": "bigquery.googleapis.com",
+      "methodName": "jobservice.jobcompleted",
+      "resourceName": "projects/coki-214004/jobs/5360b1c7-6b4e-44bb-8e52-e5eec5499d97",
+      "serviceData": {
+        "@type": "type.googleapis.com/google.cloud.bigquery.logging.v1.AuditData",
+        "jobCompletedEvent": {
+          "eventName": "load_job_completed",
+          "job": {
+            "jobName": {
+              "projectId": "coki-214004",
+              "jobId": "5360b1c7-6b4e-44bb-8e52-e5eec5499d97",
+              "location": "US"
+            },
+            "jobConfiguration": {
+              "load": {
+                "sourceUris": [
+                  "gs://coki-parsed-doi/v1/grid.9486.3/wos/2016-12/2018-11-27 12:58:04.393392+00:00_de9f63a3-566d-4071-a3b9-5f28cee656ac.csv"
+                ],
+                "destinationTable": {
+                  "projectId": "coki-214004",
+                  "datasetId": "institutions",
+                  "tableId": "raw_prod"
+                },
+                "createDisposition": "CREATE_IF_NEEDED",
+                "writeDisposition": "WRITE_APPEND",
+                "schemaJson": "{\n  \"fields\": [{\n    \"name\": \"doi\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"grid_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"month\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"first_lookup\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }]\n}"
+              }
+            },
+            "jobStatus": {
+              "state": "DONE",
+              "error": {
+                "code": 3,
+                "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 86; errors: 1. Please look into the error stream for more details."
+              },
+              "additionalErrors": [
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 86; errors: 1. Please look into the error stream for more details."
+                },
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: Too many values in row starting at position: 16021."
+                }
+              ]
+            },
+            "jobStatistics": {
+              "createTime": "2018-11-27T12:58:13.440Z",
+              "startTime": "2018-11-27T12:58:14.011Z",
+              "endTime": "2018-11-27T12:58:14.512Z"
+            }
+          }
+        }
+      }
+    },
+    "insertId": "-27o218e5413x",
+    "resource": {
+      "type": "bigquery_resource",
+      "labels": {
+        "project_id": "coki-214004"
+      }
+    },
+    "timestamp": "2018-11-27T12:58:14.520Z",
+    "severity": "ERROR",
+    "logName": "projects/coki-214004/logs/cloudaudit.googleapis.com%2Fdata_access",
+    "receiveTimestamp": "2018-11-27T12:58:14.923286289Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 33; errors: 1. Please look into the error stream for more details."
+      },
+      "authenticationInfo": {
+        "principalEmail": "coki-214004@appspot.gserviceaccount.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2600:1900:2000:38:400::1b",
+        "callerSuppliedUserAgent": "gcloud-python/0.28.1,gzip(gfe)"
+      },
+      "serviceName": "bigquery.googleapis.com",
+      "methodName": "jobservice.jobcompleted",
+      "resourceName": "projects/coki-214004/jobs/2025fdd8-886e-44ce-b4d0-f9e845f4462b",
+      "serviceData": {
+        "@type": "type.googleapis.com/google.cloud.bigquery.logging.v1.AuditData",
+        "jobCompletedEvent": {
+          "eventName": "load_job_completed",
+          "job": {
+            "jobName": {
+              "projectId": "coki-214004",
+              "jobId": "2025fdd8-886e-44ce-b4d0-f9e845f4462b",
+              "location": "US"
+            },
+            "jobConfiguration": {
+              "load": {
+                "sourceUris": [
+                  "gs://coki-parsed-doi/v1/grid.9486.3/wos/2015-07/2018-11-27 12:47:04.222249+00:00_7ab6bfd3-911b-4378-b3f0-5db2077f37d9.csv"
+                ],
+                "destinationTable": {
+                  "projectId": "coki-214004",
+                  "datasetId": "institutions",
+                  "tableId": "raw_prod"
+                },
+                "createDisposition": "CREATE_IF_NEEDED",
+                "writeDisposition": "WRITE_APPEND",
+                "schemaJson": "{\n  \"fields\": [{\n    \"name\": \"doi\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"grid_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"month\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"first_lookup\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }]\n}"
+              }
+            },
+            "jobStatus": {
+              "state": "DONE",
+              "error": {
+                "code": 3,
+                "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 33; errors: 1. Please look into the error stream for more details."
+              },
+              "additionalErrors": [
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 33; errors: 1. Please look into the error stream for more details."
+                },
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: Too many values in row starting at position: 5947."
+                }
+              ]
+            },
+            "jobStatistics": {
+              "createTime": "2018-11-27T12:47:14.947Z",
+              "startTime": "2018-11-27T12:47:15.446Z",
+              "endTime": "2018-11-27T12:47:16.074Z"
+            }
+          }
+        }
+      }
+    },
+    "insertId": "9g0u7fe6n6om",
+    "resource": {
+      "type": "bigquery_resource",
+      "labels": {
+        "project_id": "coki-214004"
+      }
+    },
+    "timestamp": "2018-11-27T12:47:16.102Z",
+    "severity": "ERROR",
+    "logName": "projects/coki-214004/logs/cloudaudit.googleapis.com%2Fdata_access",
+    "receiveTimestamp": "2018-11-27T12:47:16.899240737Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 494; errors: 1. Please look into the error stream for more details."
+      },
+      "authenticationInfo": {
+        "principalEmail": "coki-214004@appspot.gserviceaccount.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2600:1900:2000:38:400::1b",
+        "callerSuppliedUserAgent": "gcloud-python/0.28.1,gzip(gfe)"
+      },
+      "serviceName": "bigquery.googleapis.com",
+      "methodName": "jobservice.jobcompleted",
+      "resourceName": "projects/coki-214004/jobs/6601759a-6c27-4361-b2ee-d76bb465a4c4",
+      "serviceData": {
+        "@type": "type.googleapis.com/google.cloud.bigquery.logging.v1.AuditData",
+        "jobCompletedEvent": {
+          "eventName": "load_job_completed",
+          "job": {
+            "jobName": {
+              "projectId": "coki-214004",
+              "jobId": "6601759a-6c27-4361-b2ee-d76bb465a4c4",
+              "location": "US"
+            },
+            "jobConfiguration": {
+              "load": {
+                "sourceUris": [
+                  "gs://coki-parsed-doi/v1/grid.26999.3d/wos/2018-07/2018-11-27 12:31:04.237055+00:00_aea359ed-26d9-4138-bea3-e7b69417310b.csv"
+                ],
+                "destinationTable": {
+                  "projectId": "coki-214004",
+                  "datasetId": "institutions",
+                  "tableId": "raw_prod"
+                },
+                "createDisposition": "CREATE_IF_NEEDED",
+                "writeDisposition": "WRITE_APPEND",
+                "schemaJson": "{\n  \"fields\": [{\n    \"name\": \"doi\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"grid_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"month\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"first_lookup\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }]\n}"
+              }
+            },
+            "jobStatus": {
+              "state": "DONE",
+              "error": {
+                "code": 3,
+                "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 494; errors: 1. Please look into the error stream for more details."
+              },
+              "additionalErrors": [
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 494; errors: 1. Please look into the error stream for more details."
+                },
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: Too many values in row starting at position: 94838."
+                }
+              ]
+            },
+            "jobStatistics": {
+              "createTime": "2018-11-27T12:31:26.348Z",
+              "startTime": "2018-11-27T12:31:26.782Z",
+              "endTime": "2018-11-27T12:31:27.294Z"
+            }
+          }
+        }
+      }
+    },
+    "insertId": "-1dhzwse5oicj",
+    "resource": {
+      "type": "bigquery_resource",
+      "labels": {
+        "project_id": "coki-214004"
+      }
+    },
+    "timestamp": "2018-11-27T12:31:27.303Z",
+    "severity": "ERROR",
+    "logName": "projects/coki-214004/logs/cloudaudit.googleapis.com%2Fdata_access",
+    "receiveTimestamp": "2018-11-27T12:31:27.446273229Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 1236; errors: 1. Please look into the error stream for more details."
+      },
+      "authenticationInfo": {
+        "principalEmail": "coki-214004@appspot.gserviceaccount.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2600:1900:2000:38:400::1b",
+        "callerSuppliedUserAgent": "gcloud-python/0.28.1,gzip(gfe)"
+      },
+      "serviceName": "bigquery.googleapis.com",
+      "methodName": "jobservice.jobcompleted",
+      "resourceName": "projects/coki-214004/jobs/23e70d3b-7183-47f5-ba8e-52e9aeab0df5",
+      "serviceData": {
+        "@type": "type.googleapis.com/google.cloud.bigquery.logging.v1.AuditData",
+        "jobCompletedEvent": {
+          "eventName": "load_job_completed",
+          "job": {
+            "jobName": {
+              "projectId": "coki-214004",
+              "jobId": "23e70d3b-7183-47f5-ba8e-52e9aeab0df5",
+              "location": "US"
+            },
+            "jobConfiguration": {
+              "load": {
+                "sourceUris": [
+                  "gs://coki-parsed-doi/v1/grid.26999.3d/wos/2018-01/2018-11-27 12:28:04.543540+00:00_72c8beb0-7d4c-4d61-afe2-44d5a988e8ec.csv"
+                ],
+                "destinationTable": {
+                  "projectId": "coki-214004",
+                  "datasetId": "institutions",
+                  "tableId": "raw_prod"
+                },
+                "createDisposition": "CREATE_IF_NEEDED",
+                "writeDisposition": "WRITE_APPEND",
+                "schemaJson": "{\n  \"fields\": [{\n    \"name\": \"doi\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"grid_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"month\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"first_lookup\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }]\n}"
+              }
+            },
+            "jobStatus": {
+              "state": "DONE",
+              "error": {
+                "code": 3,
+                "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 1236; errors: 1. Please look into the error stream for more details."
+              },
+              "additionalErrors": [
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 1236; errors: 1. Please look into the error stream for more details."
+                },
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: Too many values in row starting at position: 234135."
+                }
+              ]
+            },
+            "jobStatistics": {
+              "createTime": "2018-11-27T12:28:40.410Z",
+              "startTime": "2018-11-27T12:28:41.011Z",
+              "endTime": "2018-11-27T12:28:41.525Z"
+            }
+          }
+        }
+      }
+    },
+    "insertId": "ezxtqwe4hqjc",
+    "resource": {
+      "type": "bigquery_resource",
+      "labels": {
+        "project_id": "coki-214004"
+      }
+    },
+    "timestamp": "2018-11-27T12:28:41.534Z",
+    "severity": "ERROR",
+    "logName": "projects/coki-214004/logs/cloudaudit.googleapis.com%2Fdata_access",
+    "receiveTimestamp": "2018-11-27T12:28:42.011479341Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 695; errors: 1. Please look into the error stream for more details."
+      },
+      "authenticationInfo": {
+        "principalEmail": "coki-214004@appspot.gserviceaccount.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2600:1900:2000:38:400::1b",
+        "callerSuppliedUserAgent": "gcloud-python/0.28.1,gzip(gfe)"
+      },
+      "serviceName": "bigquery.googleapis.com",
+      "methodName": "jobservice.jobcompleted",
+      "resourceName": "projects/coki-214004/jobs/2c75f38a-2480-4a8f-95d1-9ead1c9f56d9",
+      "serviceData": {
+        "@type": "type.googleapis.com/google.cloud.bigquery.logging.v1.AuditData",
+        "jobCompletedEvent": {
+          "eventName": "load_job_completed",
+          "job": {
+            "jobName": {
+              "projectId": "coki-214004",
+              "jobId": "2c75f38a-2480-4a8f-95d1-9ead1c9f56d9",
+              "location": "US"
+            },
+            "jobConfiguration": {
+              "load": {
+                "sourceUris": [
+                  "gs://coki-parsed-doi/v1/grid.26999.3d/wos/2016-12/2018-11-27 12:18:03.791735+00:00_2b5225ae-4573-4031-bdcb-7aa6b7862b92.csv"
+                ],
+                "destinationTable": {
+                  "projectId": "coki-214004",
+                  "datasetId": "institutions",
+                  "tableId": "raw_prod"
+                },
+                "createDisposition": "CREATE_IF_NEEDED",
+                "writeDisposition": "WRITE_APPEND",
+                "schemaJson": "{\n  \"fields\": [{\n    \"name\": \"doi\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"grid_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"month\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"first_lookup\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }]\n}"
+              }
+            },
+            "jobStatus": {
+              "state": "DONE",
+              "error": {
+                "code": 3,
+                "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 695; errors: 1. Please look into the error stream for more details."
+              },
+              "additionalErrors": [
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 695; errors: 1. Please look into the error stream for more details."
+                },
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: Too many values in row starting at position: 134100."
+                }
+              ]
+            },
+            "jobStatistics": {
+              "createTime": "2018-11-27T12:18:23.649Z",
+              "startTime": "2018-11-27T12:18:24.206Z",
+              "endTime": "2018-11-27T12:18:24.725Z"
+            }
+          }
+        }
+      }
+    },
+    "insertId": "tz2on5e569hf",
+    "resource": {
+      "type": "bigquery_resource",
+      "labels": {
+        "project_id": "coki-214004"
+      }
+    },
+    "timestamp": "2018-11-27T12:18:24.750Z",
+    "severity": "ERROR",
+    "logName": "projects/coki-214004/logs/cloudaudit.googleapis.com%2Fdata_access",
+    "receiveTimestamp": "2018-11-27T12:18:25.162303807Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 860; errors: 1. Please look into the error stream for more details."
+      },
+      "authenticationInfo": {
+        "principalEmail": "coki-214004@appspot.gserviceaccount.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2600:1900:2000:38:400::1b",
+        "callerSuppliedUserAgent": "gcloud-python/0.28.1,gzip(gfe)"
+      },
+      "serviceName": "bigquery.googleapis.com",
+      "methodName": "jobservice.jobcompleted",
+      "resourceName": "projects/coki-214004/jobs/40ad6689-24ab-41e5-8ecf-c6f131619e77",
+      "serviceData": {
+        "@type": "type.googleapis.com/google.cloud.bigquery.logging.v1.AuditData",
+        "jobCompletedEvent": {
+          "eventName": "load_job_completed",
+          "job": {
+            "jobName": {
+              "projectId": "coki-214004",
+              "jobId": "40ad6689-24ab-41e5-8ecf-c6f131619e77",
+              "location": "US"
+            },
+            "jobConfiguration": {
+              "load": {
+                "sourceUris": [
+                  "gs://coki-parsed-doi/v1/grid.30055.33/wos/2018-01/2018-11-27 11:42:04.312420+00:00_e6d13659-6740-4f9d-911f-c4d238b75418.csv"
+                ],
+                "destinationTable": {
+                  "projectId": "coki-214004",
+                  "datasetId": "institutions",
+                  "tableId": "raw_prod"
+                },
+                "createDisposition": "CREATE_IF_NEEDED",
+                "writeDisposition": "WRITE_APPEND",
+                "schemaJson": "{\n  \"fields\": [{\n    \"name\": \"doi\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"grid_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"month\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"first_lookup\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }]\n}"
+              }
+            },
+            "jobStatus": {
+              "state": "DONE",
+              "error": {
+                "code": 3,
+                "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 860; errors: 1. Please look into the error stream for more details."
+              },
+              "additionalErrors": [
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 860; errors: 1. Please look into the error stream for more details."
+                },
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: Too many values in row starting at position: 167377."
+                }
+              ]
+            },
+            "jobStatistics": {
+              "createTime": "2018-11-27T11:42:18.516Z",
+              "startTime": "2018-11-27T11:42:18.992Z",
+              "endTime": "2018-11-27T11:42:19.590Z"
+            }
+          }
+        }
+      }
+    },
+    "insertId": "-cgzji0e4ocg8",
+    "resource": {
+      "type": "bigquery_resource",
+      "labels": {
+        "project_id": "coki-214004"
+      }
+    },
+    "timestamp": "2018-11-27T11:42:19.601Z",
+    "severity": "ERROR",
+    "logName": "projects/coki-214004/logs/cloudaudit.googleapis.com%2Fdata_access",
+    "receiveTimestamp": "2018-11-27T11:42:19.995457510Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 356; errors: 1. Please look into the error stream for more details."
+      },
+      "authenticationInfo": {
+        "principalEmail": "coki-214004@appspot.gserviceaccount.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2600:1900:2000:38:400::1b",
+        "callerSuppliedUserAgent": "gcloud-python/0.28.1,gzip(gfe)"
+      },
+      "serviceName": "bigquery.googleapis.com",
+      "methodName": "jobservice.jobcompleted",
+      "resourceName": "projects/coki-214004/jobs/4cbdeee0-71aa-44b4-b290-5fe219012358",
+      "serviceData": {
+        "@type": "type.googleapis.com/google.cloud.bigquery.logging.v1.AuditData",
+        "jobCompletedEvent": {
+          "eventName": "load_job_completed",
+          "job": {
+            "jobName": {
+              "projectId": "coki-214004",
+              "jobId": "4cbdeee0-71aa-44b4-b290-5fe219012358",
+              "location": "US"
+            },
+            "jobConfiguration": {
+              "load": {
+                "sourceUris": [
+                  "gs://coki-parsed-doi/v1/grid.116068.8/wos/2014-12/2018-11-27 08:38:12.901620+00:00_c56a9a4e-45c8-4bc7-bdd5-27fb0de58183.csv"
+                ],
+                "destinationTable": {
+                  "projectId": "coki-214004",
+                  "datasetId": "institutions",
+                  "tableId": "raw_prod"
+                },
+                "createDisposition": "CREATE_IF_NEEDED",
+                "writeDisposition": "WRITE_APPEND",
+                "schemaJson": "{\n  \"fields\": [{\n    \"name\": \"doi\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"grid_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"month\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"first_lookup\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }]\n}"
+              }
+            },
+            "jobStatus": {
+              "state": "DONE",
+              "error": {
+                "code": 3,
+                "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 356; errors: 1. Please look into the error stream for more details."
+              },
+              "additionalErrors": [
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 356; errors: 1. Please look into the error stream for more details."
+                },
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: Too many values in row starting at position: 67913."
+                }
+              ]
+            },
+            "jobStatistics": {
+              "createTime": "2018-11-27T08:38:37.143Z",
+              "startTime": "2018-11-27T08:38:37.585Z",
+              "endTime": "2018-11-27T08:38:39.014Z"
+            }
+          }
+        }
+      }
+    },
+    "insertId": "-31an2le6ojz4",
+    "resource": {
+      "type": "bigquery_resource",
+      "labels": {
+        "project_id": "coki-214004"
+      }
+    },
+    "timestamp": "2018-11-27T08:38:39.022Z",
+    "severity": "ERROR",
+    "logName": "projects/coki-214004/logs/cloudaudit.googleapis.com%2Fdata_access",
+    "receiveTimestamp": "2018-11-27T08:38:39.260602418Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 320; errors: 1. Please look into the error stream for more details."
+      },
+      "authenticationInfo": {
+        "principalEmail": "coki-214004@appspot.gserviceaccount.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2600:1900:2000:38:400::1b",
+        "callerSuppliedUserAgent": "gcloud-python/0.28.1,gzip(gfe)"
+      },
+      "serviceName": "bigquery.googleapis.com",
+      "methodName": "jobservice.jobcompleted",
+      "resourceName": "projects/coki-214004/jobs/98e9fe1a-d7a8-425d-9081-70f2be8b1dda",
+      "serviceData": {
+        "@type": "type.googleapis.com/google.cloud.bigquery.logging.v1.AuditData",
+        "jobCompletedEvent": {
+          "eventName": "load_job_completed",
+          "job": {
+            "jobName": {
+              "projectId": "coki-214004",
+              "jobId": "98e9fe1a-d7a8-425d-9081-70f2be8b1dda",
+              "location": "US"
+            },
+            "jobConfiguration": {
+              "load": {
+                "sourceUris": [
+                  "gs://coki-parsed-doi/v1/grid.4305.2/wos/2017-12/2018-11-27 07:36:07.314357+00:00_d0892929-df20-4ca7-aa26-908202ca308e.csv"
+                ],
+                "destinationTable": {
+                  "projectId": "coki-214004",
+                  "datasetId": "institutions",
+                  "tableId": "raw_prod"
+                },
+                "createDisposition": "CREATE_IF_NEEDED",
+                "writeDisposition": "WRITE_APPEND",
+                "schemaJson": "{\n  \"fields\": [{\n    \"name\": \"doi\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"grid_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"month\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"first_lookup\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }]\n}"
+              }
+            },
+            "jobStatus": {
+              "state": "DONE",
+              "error": {
+                "code": 3,
+                "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 320; errors: 1. Please look into the error stream for more details."
+              },
+              "additionalErrors": [
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 320; errors: 1. Please look into the error stream for more details."
+                },
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: Too many values in row starting at position: 60411."
+                }
+              ]
+            },
+            "jobStatistics": {
+              "createTime": "2018-11-27T07:36:40.242Z",
+              "startTime": "2018-11-27T07:36:40.811Z",
+              "endTime": "2018-11-27T07:36:41.287Z"
+            }
+          }
+        }
+      }
+    },
+    "insertId": "svecipe5slmz",
+    "resource": {
+      "type": "bigquery_resource",
+      "labels": {
+        "project_id": "coki-214004"
+      }
+    },
+    "timestamp": "2018-11-27T07:36:41.296Z",
+    "severity": "ERROR",
+    "logName": "projects/coki-214004/logs/cloudaudit.googleapis.com%2Fdata_access",
+    "receiveTimestamp": "2018-11-27T07:36:41.483016731Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 408; errors: 1. Please look into the error stream for more details."
+      },
+      "authenticationInfo": {
+        "principalEmail": "coki-214004@appspot.gserviceaccount.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2600:1900:2000:38:400::1b",
+        "callerSuppliedUserAgent": "gcloud-python/0.28.1,gzip(gfe)"
+      },
+      "serviceName": "bigquery.googleapis.com",
+      "methodName": "jobservice.jobcompleted",
+      "resourceName": "projects/coki-214004/jobs/68a1de60-f276-4c4d-97e7-f927bfbc8499",
+      "serviceData": {
+        "@type": "type.googleapis.com/google.cloud.bigquery.logging.v1.AuditData",
+        "jobCompletedEvent": {
+          "eventName": "load_job_completed",
+          "job": {
+            "jobName": {
+              "projectId": "coki-214004",
+              "jobId": "68a1de60-f276-4c4d-97e7-f927bfbc8499",
+              "location": "US"
+            },
+            "jobConfiguration": {
+              "load": {
+                "sourceUris": [
+                  "gs://coki-parsed-doi/v1/grid.4305.2/wos/2017-08/2018-11-27 07:32:08.042684+00:00_d3296a8e-d37e-45ff-a7eb-62ed629da70a.csv"
+                ],
+                "destinationTable": {
+                  "projectId": "coki-214004",
+                  "datasetId": "institutions",
+                  "tableId": "raw_prod"
+                },
+                "createDisposition": "CREATE_IF_NEEDED",
+                "writeDisposition": "WRITE_APPEND",
+                "schemaJson": "{\n  \"fields\": [{\n    \"name\": \"doi\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"grid_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"month\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"first_lookup\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }]\n}"
+              }
+            },
+            "jobStatus": {
+              "state": "DONE",
+              "error": {
+                "code": 3,
+                "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 408; errors: 1. Please look into the error stream for more details."
+              },
+              "additionalErrors": [
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 408; errors: 1. Please look into the error stream for more details."
+                },
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: Too many values in row starting at position: 77965."
+                }
+              ]
+            },
+            "jobStatistics": {
+              "createTime": "2018-11-27T07:32:34.254Z",
+              "startTime": "2018-11-27T07:32:34.713Z",
+              "endTime": "2018-11-27T07:32:35.253Z"
+            }
+          }
+        }
+      }
+    },
+    "insertId": "-9z0b8ye4qicq",
+    "resource": {
+      "type": "bigquery_resource",
+      "labels": {
+        "project_id": "coki-214004"
+      }
+    },
+    "timestamp": "2018-11-27T07:32:35.265Z",
+    "severity": "ERROR",
+    "logName": "projects/coki-214004/logs/cloudaudit.googleapis.com%2Fdata_access",
+    "receiveTimestamp": "2018-11-27T07:32:35.787329316Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 8999; errors: 1. Please look into the error stream for more details."
+      },
+      "authenticationInfo": {
+        "principalEmail": "coki-214004@appspot.gserviceaccount.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2600:1900:2000:38:400::1b",
+        "callerSuppliedUserAgent": "gcloud-python/0.28.1,gzip(gfe)"
+      },
+      "serviceName": "bigquery.googleapis.com",
+      "methodName": "jobservice.jobcompleted",
+      "resourceName": "projects/coki-214004/jobs/873eb4d6-1885-41bd-bff8-7b8e0bdab422",
+      "serviceData": {
+        "@type": "type.googleapis.com/google.cloud.bigquery.logging.v1.AuditData",
+        "jobCompletedEvent": {
+          "eventName": "load_job_completed",
+          "job": {
+            "jobName": {
+              "projectId": "coki-214004",
+              "jobId": "873eb4d6-1885-41bd-bff8-7b8e0bdab422",
+              "location": "US"
+            },
+            "jobConfiguration": {
+              "load": {
+                "sourceUris": [
+                  "gs://coki-parsed-doi/v1/grid.83440.3b/msa/2014-01/2018-11-21 05:36:20.048307+00:00_a09acf89-4ffa-472e-8ab7-02f0d37742e0.csv"
+                ],
+                "destinationTable": {
+                  "projectId": "coki-214004",
+                  "datasetId": "institutions",
+                  "tableId": "raw_prod"
+                },
+                "createDisposition": "CREATE_IF_NEEDED",
+                "writeDisposition": "WRITE_APPEND",
+                "schemaJson": "{\n  \"fields\": [{\n    \"name\": \"doi\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"grid_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"month\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"first_lookup\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }]\n}"
+              }
+            },
+            "jobStatus": {
+              "state": "DONE",
+              "error": {
+                "code": 3,
+                "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 8999; errors: 1. Please look into the error stream for more details."
+              },
+              "additionalErrors": [
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 8999; errors: 1. Please look into the error stream for more details."
+                },
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: Too many values in row starting at position: 1755529."
+                }
+              ]
+            },
+            "jobStatistics": {
+              "createTime": "2018-11-27T05:53:49.672Z",
+              "startTime": "2018-11-27T05:53:50.186Z",
+              "endTime": "2018-11-27T05:53:50.822Z"
+            }
+          }
+        }
+      }
+    },
+    "insertId": "-kinw0fe57owa",
+    "resource": {
+      "type": "bigquery_resource",
+      "labels": {
+        "project_id": "coki-214004"
+      }
+    },
+    "timestamp": "2018-11-27T05:53:50.831Z",
+    "severity": "ERROR",
+    "logName": "projects/coki-214004/logs/cloudaudit.googleapis.com%2Fdata_access",
+    "receiveTimestamp": "2018-11-27T05:53:51.018779554Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 20; errors: 1. Please look into the error stream for more details."
+      },
+      "authenticationInfo": {
+        "principalEmail": "coki-214004@appspot.gserviceaccount.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2600:1900:2000:1d:400::26",
+        "callerSuppliedUserAgent": "gcloud-python/0.28.1,gzip(gfe)"
+      },
+      "serviceName": "bigquery.googleapis.com",
+      "methodName": "jobservice.jobcompleted",
+      "resourceName": "projects/coki-214004/jobs/629ee755-ea27-4d9d-a559-86c5d4b93dfa",
+      "serviceData": {
+        "@type": "type.googleapis.com/google.cloud.bigquery.logging.v1.AuditData",
+        "jobCompletedEvent": {
+          "eventName": "load_job_completed",
+          "job": {
+            "jobName": {
+              "projectId": "coki-214004",
+              "jobId": "629ee755-ea27-4d9d-a559-86c5d4b93dfa",
+              "location": "US"
+            },
+            "jobConfiguration": {
+              "load": {
+                "sourceUris": [
+                  "gs://coki-parsed-doi/v1/grid.34980.36/wos/2016-12/2018-11-26 08:44:19.781894+00:00_9f24b372-7fa1-45c3-86e5-e8fc06072864.csv"
+                ],
+                "destinationTable": {
+                  "projectId": "coki-214004",
+                  "datasetId": "institutions",
+                  "tableId": "raw_prod"
+                },
+                "createDisposition": "CREATE_IF_NEEDED",
+                "writeDisposition": "WRITE_APPEND",
+                "schemaJson": "{\n  \"fields\": [{\n    \"name\": \"doi\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"grid_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"month\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"first_lookup\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }]\n}"
+              }
+            },
+            "jobStatus": {
+              "state": "DONE",
+              "error": {
+                "code": 3,
+                "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 20; errors: 1. Please look into the error stream for more details."
+              },
+              "additionalErrors": [
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 20; errors: 1. Please look into the error stream for more details."
+                },
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: Too many values in row starting at position: 3716."
+                }
+              ]
+            },
+            "jobStatistics": {
+              "createTime": "2018-11-26T08:44:25.958Z",
+              "startTime": "2018-11-26T08:44:26.482Z",
+              "endTime": "2018-11-26T08:44:27.025Z"
+            }
+          }
+        }
+      }
+    },
+    "insertId": "-nunitxe4l44m",
+    "resource": {
+      "type": "bigquery_resource",
+      "labels": {
+        "project_id": "coki-214004"
+      }
+    },
+    "timestamp": "2018-11-26T08:44:27.036Z",
+    "severity": "ERROR",
+    "logName": "projects/coki-214004/logs/cloudaudit.googleapis.com%2Fdata_access",
+    "receiveTimestamp": "2018-11-26T08:44:27.339655700Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 516; errors: 1. Please look into the error stream for more details."
+      },
+      "authenticationInfo": {
+        "principalEmail": "coki-214004@appspot.gserviceaccount.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2600:1900:2001:2::2b",
+        "callerSuppliedUserAgent": "gcloud-python/0.28.1,gzip(gfe)"
+      },
+      "serviceName": "bigquery.googleapis.com",
+      "methodName": "jobservice.jobcompleted",
+      "resourceName": "projects/coki-214004/jobs/f20f92dc-fcba-4784-b619-35ded1f8bae9",
+      "serviceData": {
+        "@type": "type.googleapis.com/google.cloud.bigquery.logging.v1.AuditData",
+        "jobCompletedEvent": {
+          "eventName": "load_job_completed",
+          "job": {
+            "jobName": {
+              "projectId": "coki-214004",
+              "jobId": "f20f92dc-fcba-4784-b619-35ded1f8bae9",
+              "location": "US"
+            },
+            "jobConfiguration": {
+              "load": {
+                "sourceUris": [
+                  "gs://coki-parsed-doi/v1/grid.11899.38/wos/2018-07/2018-11-22 01:40:25.018855+00:00_553a6137-3724-41ff-b349-e7886f05b26d.csv"
+                ],
+                "destinationTable": {
+                  "projectId": "coki-214004",
+                  "datasetId": "institutions",
+                  "tableId": "raw_prod"
+                },
+                "createDisposition": "CREATE_IF_NEEDED",
+                "writeDisposition": "WRITE_APPEND",
+                "schemaJson": "{\n  \"fields\": [{\n    \"name\": \"doi\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"grid_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"month\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"first_lookup\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }]\n}"
+              }
+            },
+            "jobStatus": {
+              "state": "DONE",
+              "error": {
+                "code": 3,
+                "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 516; errors: 1. Please look into the error stream for more details."
+              },
+              "additionalErrors": [
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 516; errors: 1. Please look into the error stream for more details."
+                },
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: Too many values in row starting at position: 99849."
+                }
+              ]
+            },
+            "jobStatistics": {
+              "createTime": "2018-11-22T01:40:46.971Z",
+              "startTime": "2018-11-22T01:40:47.519Z",
+              "endTime": "2018-11-22T01:40:48.071Z"
+            }
+          }
+        }
+      }
+    },
+    "insertId": "atqkuqe3bzb9",
+    "resource": {
+      "type": "bigquery_resource",
+      "labels": {
+        "project_id": "coki-214004"
+      }
+    },
+    "timestamp": "2018-11-22T01:40:48.079Z",
+    "severity": "ERROR",
+    "logName": "projects/coki-214004/logs/cloudaudit.googleapis.com%2Fdata_access",
+    "receiveTimestamp": "2018-11-22T01:40:48.452233598Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 317; errors: 1. Please look into the error stream for more details."
+      },
+      "authenticationInfo": {
+        "principalEmail": "coki-214004@appspot.gserviceaccount.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2600:1900:2001:2::2b",
+        "callerSuppliedUserAgent": "gcloud-python/0.28.1,gzip(gfe)"
+      },
+      "serviceName": "bigquery.googleapis.com",
+      "methodName": "jobservice.jobcompleted",
+      "resourceName": "projects/coki-214004/jobs/1fc084d4-8d9b-4d8f-bf09-9aa584cf094f",
+      "serviceData": {
+        "@type": "type.googleapis.com/google.cloud.bigquery.logging.v1.AuditData",
+        "jobCompletedEvent": {
+          "eventName": "load_job_completed",
+          "job": {
+            "jobName": {
+              "projectId": "coki-214004",
+              "jobId": "1fc084d4-8d9b-4d8f-bf09-9aa584cf094f",
+              "location": "US"
+            },
+            "jobConfiguration": {
+              "load": {
+                "sourceUris": [
+                  "gs://coki-parsed-doi/v1/grid.11899.38/wos/2017-04/2018-11-22 01:23:29.803789+00:00_f7f32a98-136b-4b03-98b7-5047f6dbb17f.csv"
+                ],
+                "destinationTable": {
+                  "projectId": "coki-214004",
+                  "datasetId": "institutions",
+                  "tableId": "raw_prod"
+                },
+                "createDisposition": "CREATE_IF_NEEDED",
+                "writeDisposition": "WRITE_APPEND",
+                "schemaJson": "{\n  \"fields\": [{\n    \"name\": \"doi\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"grid_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"month\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"first_lookup\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }]\n}"
+              }
+            },
+            "jobStatus": {
+              "state": "DONE",
+              "error": {
+                "code": 3,
+                "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 317; errors: 1. Please look into the error stream for more details."
+              },
+              "additionalErrors": [
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 317; errors: 1. Please look into the error stream for more details."
+                },
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: Too many values in row starting at position: 59870."
+                }
+              ]
+            },
+            "jobStatistics": {
+              "createTime": "2018-11-22T01:23:51.467Z",
+              "startTime": "2018-11-22T01:23:52.010Z",
+              "endTime": "2018-11-22T01:23:52.551Z"
+            }
+          }
+        }
+      }
+    },
+    "insertId": "qnfkpae3odmr",
+    "resource": {
+      "type": "bigquery_resource",
+      "labels": {
+        "project_id": "coki-214004"
+      }
+    },
+    "timestamp": "2018-11-22T01:23:52.559Z",
+    "severity": "ERROR",
+    "logName": "projects/coki-214004/logs/cloudaudit.googleapis.com%2Fdata_access",
+    "receiveTimestamp": "2018-11-22T01:23:52.576022274Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 1185; errors: 1. Please look into the error stream for more details."
+      },
+      "authenticationInfo": {
+        "principalEmail": "coki-214004@appspot.gserviceaccount.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2600:1900:2001:2::2b",
+        "callerSuppliedUserAgent": "gcloud-python/0.28.1,gzip(gfe)"
+      },
+      "serviceName": "bigquery.googleapis.com",
+      "methodName": "jobservice.jobcompleted",
+      "resourceName": "projects/coki-214004/jobs/7b5e73c7-14eb-415f-81ae-9859dd080782",
+      "serviceData": {
+        "@type": "type.googleapis.com/google.cloud.bigquery.logging.v1.AuditData",
+        "jobCompletedEvent": {
+          "eventName": "load_job_completed",
+          "job": {
+            "jobName": {
+              "projectId": "coki-214004",
+              "jobId": "7b5e73c7-14eb-415f-81ae-9859dd080782",
+              "location": "US"
+            },
+            "jobConfiguration": {
+              "load": {
+                "sourceUris": [
+                  "gs://coki-parsed-doi/v1/grid.83440.3b/wos/2018-03/2018-11-21 21:50:17.974400+00:00_74d9a525-c167-4979-b6fa-5ba41b393ab4.csv"
+                ],
+                "destinationTable": {
+                  "projectId": "coki-214004",
+                  "datasetId": "institutions",
+                  "tableId": "raw_prod"
+                },
+                "createDisposition": "CREATE_IF_NEEDED",
+                "writeDisposition": "WRITE_APPEND",
+                "schemaJson": "{\n  \"fields\": [{\n    \"name\": \"doi\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"grid_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"month\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"first_lookup\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }]\n}"
+              }
+            },
+            "jobStatus": {
+              "state": "DONE",
+              "error": {
+                "code": 3,
+                "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 1185; errors: 1. Please look into the error stream for more details."
+              },
+              "additionalErrors": [
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 1185; errors: 1. Please look into the error stream for more details."
+                },
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: Too many values in row starting at position: 227260."
+                }
+              ]
+            },
+            "jobStatistics": {
+              "createTime": "2018-11-21T21:50:45.478Z",
+              "startTime": "2018-11-21T21:50:45.989Z",
+              "endTime": "2018-11-21T21:50:46.661Z"
+            }
+          }
+        }
+      }
+    },
+    "insertId": "-nki8tre2hhmx",
+    "resource": {
+      "type": "bigquery_resource",
+      "labels": {
+        "project_id": "coki-214004"
+      }
+    },
+    "timestamp": "2018-11-21T21:50:46.682Z",
+    "severity": "ERROR",
+    "logName": "projects/coki-214004/logs/cloudaudit.googleapis.com%2Fdata_access",
+    "receiveTimestamp": "2018-11-21T21:50:47.497089418Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 1635; errors: 1. Please look into the error stream for more details."
+      },
+      "authenticationInfo": {
+        "principalEmail": "coki-214004@appspot.gserviceaccount.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2600:1900:2001:2::2b",
+        "callerSuppliedUserAgent": "gcloud-python/0.28.1,gzip(gfe)"
+      },
+      "serviceName": "bigquery.googleapis.com",
+      "methodName": "jobservice.jobcompleted",
+      "resourceName": "projects/coki-214004/jobs/9a31b0b6-5afd-455d-9d39-5195f9b308e7",
+      "serviceData": {
+        "@type": "type.googleapis.com/google.cloud.bigquery.logging.v1.AuditData",
+        "jobCompletedEvent": {
+          "eventName": "load_job_completed",
+          "job": {
+            "jobName": {
+              "projectId": "coki-214004",
+              "jobId": "9a31b0b6-5afd-455d-9d39-5195f9b308e7",
+              "location": "US"
+            },
+            "jobConfiguration": {
+              "load": {
+                "sourceUris": [
+                  "gs://coki-parsed-doi/v1/grid.14476.30/wos/2017-01/2018-11-21 19:59:21.380715+00:00_b4d201f2-337f-4b87-946f-3b566b14bd87.csv"
+                ],
+                "destinationTable": {
+                  "projectId": "coki-214004",
+                  "datasetId": "institutions",
+                  "tableId": "raw_prod"
+                },
+                "createDisposition": "CREATE_IF_NEEDED",
+                "writeDisposition": "WRITE_APPEND",
+                "schemaJson": "{\n  \"fields\": [{\n    \"name\": \"doi\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"grid_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"month\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"first_lookup\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }]\n}"
+              }
+            },
+            "jobStatus": {
+              "state": "DONE",
+              "error": {
+                "code": 3,
+                "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 1635; errors: 1. Please look into the error stream for more details."
+              },
+              "additionalErrors": [
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 1635; errors: 1. Please look into the error stream for more details."
+                },
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: Too many values in row starting at position: 311935."
+                }
+              ]
+            },
+            "jobStatistics": {
+              "createTime": "2018-11-21T19:59:57.842Z",
+              "startTime": "2018-11-21T19:59:58.391Z",
+              "endTime": "2018-11-21T19:59:58.980Z"
+            }
+          }
+        }
+      }
+    },
+    "insertId": "-qcqg50e2fbdu",
+    "resource": {
+      "type": "bigquery_resource",
+      "labels": {
+        "project_id": "coki-214004"
+      }
+    },
+    "timestamp": "2018-11-21T19:59:58.993Z",
+    "severity": "ERROR",
+    "logName": "projects/coki-214004/logs/cloudaudit.googleapis.com%2Fdata_access",
+    "receiveTimestamp": "2018-11-21T19:59:59.220457575Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 200; errors: 1. Please look into the error stream for more details."
+      },
+      "authenticationInfo": {
+        "principalEmail": "coki-214004@appspot.gserviceaccount.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2600:1900:2000:38:400::10",
+        "callerSuppliedUserAgent": "gcloud-python/0.28.1,gzip(gfe)"
+      },
+      "serviceName": "bigquery.googleapis.com",
+      "methodName": "jobservice.jobcompleted",
+      "resourceName": "projects/coki-214004/jobs/4a4916e0-6a39-4a10-9049-51a0c78bf887",
+      "serviceData": {
+        "@type": "type.googleapis.com/google.cloud.bigquery.logging.v1.AuditData",
+        "jobCompletedEvent": {
+          "eventName": "load_job_completed",
+          "job": {
+            "jobName": {
+              "projectId": "coki-214004",
+              "jobId": "4a4916e0-6a39-4a10-9049-51a0c78bf887",
+              "location": "US"
+            },
+            "jobConfiguration": {
+              "load": {
+                "sourceUris": [
+                  "gs://coki-parsed-doi/v1/grid.254444.7/wos/2018-07/2018-11-21 10:19:17.754990+00:00_48b62216-4a53-4454-ae49-fe34a7e04d45.csv"
+                ],
+                "destinationTable": {
+                  "projectId": "coki-214004",
+                  "datasetId": "institutions",
+                  "tableId": "raw_prod"
+                },
+                "createDisposition": "CREATE_IF_NEEDED",
+                "writeDisposition": "WRITE_APPEND",
+                "schemaJson": "{\n  \"fields\": [{\n    \"name\": \"doi\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"grid_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"month\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"first_lookup\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }]\n}"
+              }
+            },
+            "jobStatus": {
+              "state": "DONE",
+              "error": {
+                "code": 3,
+                "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 200; errors: 1. Please look into the error stream for more details."
+              },
+              "additionalErrors": [
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 200; errors: 1. Please look into the error stream for more details."
+                },
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: Too many values in row starting at position: 37362."
+                }
+              ]
+            },
+            "jobStatistics": {
+              "createTime": "2018-11-21T10:19:33.145Z",
+              "startTime": "2018-11-21T10:19:33.610Z",
+              "endTime": "2018-11-21T10:19:34.078Z"
+            }
+          }
+        }
+      }
+    },
+    "insertId": "ofbwoxe2qofr",
+    "resource": {
+      "type": "bigquery_resource",
+      "labels": {
+        "project_id": "coki-214004"
+      }
+    },
+    "timestamp": "2018-11-21T10:19:34.088Z",
+    "severity": "ERROR",
+    "logName": "projects/coki-214004/logs/cloudaudit.googleapis.com%2Fdata_access",
+    "receiveTimestamp": "2018-11-21T10:19:34.552543759Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 25; errors: 1. Please look into the error stream for more details."
+      },
+      "authenticationInfo": {
+        "principalEmail": "coki-214004@appspot.gserviceaccount.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2600:1900:2000:38:400::22",
+        "callerSuppliedUserAgent": "gcloud-python/0.28.1,gzip(gfe)"
+      },
+      "serviceName": "bigquery.googleapis.com",
+      "methodName": "jobservice.jobcompleted",
+      "resourceName": "projects/coki-214004/jobs/1d430d3b-2602-4e96-8a9e-357373246dfb",
+      "serviceData": {
+        "@type": "type.googleapis.com/google.cloud.bigquery.logging.v1.AuditData",
+        "jobCompletedEvent": {
+          "eventName": "load_job_completed",
+          "job": {
+            "jobName": {
+              "projectId": "coki-214004",
+              "jobId": "1d430d3b-2602-4e96-8a9e-357373246dfb",
+              "location": "US"
+            },
+            "jobConfiguration": {
+              "load": {
+                "sourceUris": [
+                  "gs://coki-parsed-doi/v1/grid.8664.c/wos/2018-06/2018-11-21 08:46:20.220902+00:00_3aab61cd-ddf2-4ab2-9cd2-090be11c35c3.csv"
+                ],
+                "destinationTable": {
+                  "projectId": "coki-214004",
+                  "datasetId": "institutions",
+                  "tableId": "raw_prod"
+                },
+                "createDisposition": "CREATE_IF_NEEDED",
+                "writeDisposition": "WRITE_APPEND",
+                "schemaJson": "{\n  \"fields\": [{\n    \"name\": \"doi\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"grid_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"month\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"first_lookup\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }]\n}"
+              }
+            },
+            "jobStatus": {
+              "state": "DONE",
+              "error": {
+                "code": 3,
+                "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 25; errors: 1. Please look into the error stream for more details."
+              },
+              "additionalErrors": [
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 25; errors: 1. Please look into the error stream for more details."
+                },
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: Too many values in row starting at position: 4595."
+                }
+              ]
+            },
+            "jobStatistics": {
+              "createTime": "2018-11-21T08:46:33.472Z",
+              "startTime": "2018-11-21T08:46:33.988Z",
+              "endTime": "2018-11-21T08:46:34.516Z"
+            }
+          }
+        }
+      }
+    },
+    "insertId": "x0otx5e2ytuw",
+    "resource": {
+      "type": "bigquery_resource",
+      "labels": {
+        "project_id": "coki-214004"
+      }
+    },
+    "timestamp": "2018-11-21T08:46:34.526Z",
+    "severity": "ERROR",
+    "logName": "projects/coki-214004/logs/cloudaudit.googleapis.com%2Fdata_access",
+    "receiveTimestamp": "2018-11-21T08:46:35.148685142Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 21; errors: 1. Please look into the error stream for more details."
+      },
+      "authenticationInfo": {
+        "principalEmail": "coki-214004@appspot.gserviceaccount.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2600:1900:2001:10::2a",
+        "callerSuppliedUserAgent": "gcloud-python/0.28.1,gzip(gfe)"
+      },
+      "serviceName": "bigquery.googleapis.com",
+      "methodName": "jobservice.jobcompleted",
+      "resourceName": "projects/coki-214004/jobs/da79487f-a693-433c-bf13-1e3988dcb03e",
+      "serviceData": {
+        "@type": "type.googleapis.com/google.cloud.bigquery.logging.v1.AuditData",
+        "jobCompletedEvent": {
+          "eventName": "load_job_completed",
+          "job": {
+            "jobName": {
+              "projectId": "coki-214004",
+              "jobId": "da79487f-a693-433c-bf13-1e3988dcb03e",
+              "location": "US"
+            },
+            "jobConfiguration": {
+              "load": {
+                "sourceUris": [
+                  "gs://coki-parsed-doi/v1/grid.8664.c/wos/2016-10/2018-11-21 06:59:16.915000+00:00_9b191929-af8b-4a34-a1e5-8676bead2c0e.csv"
+                ],
+                "destinationTable": {
+                  "projectId": "coki-214004",
+                  "datasetId": "institutions",
+                  "tableId": "raw_prod"
+                },
+                "createDisposition": "CREATE_IF_NEEDED",
+                "writeDisposition": "WRITE_APPEND",
+                "schemaJson": "{\n  \"fields\": [{\n    \"name\": \"doi\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"grid_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"month\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"first_lookup\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }]\n}"
+              }
+            },
+            "jobStatus": {
+              "state": "DONE",
+              "error": {
+                "code": 3,
+                "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 21; errors: 1. Please look into the error stream for more details."
+              },
+              "additionalErrors": [
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 21; errors: 1. Please look into the error stream for more details."
+                },
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: Too many values in row starting at position: 3809."
+                }
+              ]
+            },
+            "jobStatistics": {
+              "createTime": "2018-11-21T06:59:33.084Z",
+              "startTime": "2018-11-21T06:59:33.584Z",
+              "endTime": "2018-11-21T06:59:34.067Z"
+            }
+          }
+        }
+      }
+    },
+    "insertId": "-1no4dwe2r207",
+    "resource": {
+      "type": "bigquery_resource",
+      "labels": {
+        "project_id": "coki-214004"
+      }
+    },
+    "timestamp": "2018-11-21T06:59:34.078Z",
+    "severity": "ERROR",
+    "logName": "projects/coki-214004/logs/cloudaudit.googleapis.com%2Fdata_access",
+    "receiveTimestamp": "2018-11-21T06:59:34.532917522Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 8999; errors: 1. Please look into the error stream for more details."
+      },
+      "authenticationInfo": {
+        "principalEmail": "coki-214004@appspot.gserviceaccount.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2600:1900:2001:2::2b",
+        "callerSuppliedUserAgent": "gcloud-python/0.28.1,gzip(gfe)"
+      },
+      "serviceName": "bigquery.googleapis.com",
+      "methodName": "jobservice.jobcompleted",
+      "resourceName": "projects/coki-214004/jobs/277564dd-61d7-4eac-8ae8-f3565cb4b43f",
+      "serviceData": {
+        "@type": "type.googleapis.com/google.cloud.bigquery.logging.v1.AuditData",
+        "jobCompletedEvent": {
+          "eventName": "load_job_completed",
+          "job": {
+            "jobName": {
+              "projectId": "coki-214004",
+              "jobId": "277564dd-61d7-4eac-8ae8-f3565cb4b43f",
+              "location": "US"
+            },
+            "jobConfiguration": {
+              "load": {
+                "sourceUris": [
+                  "gs://coki-parsed-doi/v1/grid.83440.3b/msa/2014-01/2018-11-21 05:36:20.048306+00:00_a09acf89-4ffa-472e-8ab7-02f0d37742e0.csv"
+                ],
+                "destinationTable": {
+                  "projectId": "coki-214004",
+                  "datasetId": "institutions",
+                  "tableId": "raw_prod"
+                },
+                "createDisposition": "CREATE_IF_NEEDED",
+                "writeDisposition": "WRITE_APPEND",
+                "schemaJson": "{\n  \"fields\": [{\n    \"name\": \"doi\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"grid_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"source\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"month\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"first_lookup\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa\",\n    \"type\": \"TIMESTAMP\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"scopus_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"wos_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"msa_task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }, {\n    \"name\": \"task_id\",\n    \"type\": \"STRING\",\n    \"mode\": \"NULLABLE\"\n  }]\n}"
+              }
+            },
+            "jobStatus": {
+              "state": "DONE",
+              "error": {
+                "code": 3,
+                "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 8999; errors: 1. Please look into the error stream for more details."
+              },
+              "additionalErrors": [
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 8999; errors: 1. Please look into the error stream for more details."
+                },
+                {
+                  "code": 3,
+                  "message": "Error while reading data, error message: Too many values in row starting at position: 1755529."
+                }
+              ]
+            },
+            "jobStatistics": {
+              "createTime": "2018-11-21T05:39:26.397Z",
+              "startTime": "2018-11-21T05:39:26.884Z",
+              "endTime": "2018-11-21T05:39:27.546Z"
+            }
+          }
+        }
+      }
+    },
+    "insertId": "-7rbpfce27xrn",
+    "resource": {
+      "type": "bigquery_resource",
+      "labels": {
+        "project_id": "coki-214004"
+      }
+    },
+    "timestamp": "2018-11-21T05:39:27.557Z",
+    "severity": "ERROR",
+    "logName": "projects/coki-214004/logs/cloudaudit.googleapis.com%2Fdata_access",
+    "receiveTimestamp": "2018-11-21T05:39:28.517941896Z"
+  }
+]

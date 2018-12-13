@@ -135,11 +135,9 @@ class Dashboard extends React.Component {
   TasksPage = () => {
     return (
       <Tasks 
-        openTasks={this.props.openTasks && this.props.openTasks}
         dispatchedTasks={this.props.dispatchedTasks && this.props.dispatchedTasks}
         fetchedTasks={this.props.fetchedTasks && this.props.fetchedTasks}
-        parsedTasks={this.props.parsedTasks && this.props.parsedTasks}
-        loadedTasks={this.props.loadedTasks && this.props.loadedTasks}>
+        parsedTasks={this.props.parsedTasks && this.props.parsedTasks}>
       </Tasks>
     );
   }

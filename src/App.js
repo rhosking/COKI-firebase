@@ -29,21 +29,17 @@ class App extends Component {
 
     this.institutionCollectionRef = firestore.collection("institutions")
 
-    this.openTaskCollectionRef = firestore.collection("tasks").where('state', '==', 'open')
-    this.dispatchedTaskCollectionRef = firestore.collection("tasks").where('state', '==', 'dispatched')
-    this.fetchedTaskCollectionRef = firestore.collection("tasks").where('state', '==', 'fetched')
-    this.parsedTaskCollectionRef = firestore.collection("tasks").where('state', '==', 'parsed')
-    this.loadedTaskCollectionRef = firestore.collection("tasks").where('state', '==', 'loaded')
+    this.dispatchedTaskCollectionRef = firestore.collection("tasks").where('active', '==', true).where('state', '==', 'dispatched')
+    this.fetchedTaskCollectionRef = firestore.collection("tasks").where('active', '==', true).where('state', '==', 'fetched')
+    this.parsedTaskCollectionRef = firestore.collection("tasks").where('active', '==', true).where('state', '==', 'parsed')
 
     this.taskingsCollectionRef = firestore.collection("taskings")
 
     this.state = {
       institutionDocs: [],
-      taskOpenDocs: [],
       taskDispatchedDocs: [],
       taskFetchedDocs: [],
       taskParsedDocs: [],
-      taskLoadedDocs: [],
       taskingsDocs: [],
     }
   }
@@ -85,37 +81,13 @@ class App extends Component {
       }
     });
 
-    
     this.unsubscribeInstitutionCol = this.institutionCollectionRef.onSnapshot(this.onInstitutionColUpdate);
 
-    this.unsubscribeOpenTasksCol = this.openTaskCollectionRef.onSnapshot(this.onOpenTasksColUpdate);
     this.unsubscribeDispatchedTasksCol = this.dispatchedTaskCollectionRef.onSnapshot(this.onDispatchedTasksColUpdate);
     this.unsubscribeFetchedTasksCol = this.fetchedTaskCollectionRef.onSnapshot(this.onFetchedTasksColUpdate);
     this.unsubscribeParsedTasksCol = this.parsedTaskCollectionRef.onSnapshot(this.onParsedTasksColUpdate);
-    this.unsubscribeLoadedTasksCol = this.loadedTaskCollectionRef.onSnapshot(this.onLoadedTasksColUpdate);
 
     this.unsubscribeTaskingsCol = this.taskingsCollectionRef.onSnapshot(this.onTaskingsColUpdate);
-
-    /*const collectionRef = firestore.collection("institutions")
-      .onSnapshot(function(snapshot) {
-        snapshot.docChanges().forEach(function(change) {
-          if (change.type === "added") {
-              console.log("New: ", change.doc.data());
-          }
-          if (change.type === "modified") {
-              console.log("Modified: ", change.doc.data());
-          }
-          if (change.type === "removed") {
-              console.log("Removed: ", change.doc.data());
-          }
-          const docs = snapshot.docs.map((docSnapshot) => ({
-            id: docSnapshot.id,
-            data: docSnapshot.data()
-          }));
-
-
-      });
-    }); */
   }
 
   onInstitutionColUpdate = (snapshot) => {
@@ -125,17 +97,6 @@ class App extends Component {
     }));
     this.setState({
       institutionDocs: docs,
-      fetching: false
-    });
-  }
-
-  onOpenTasksColUpdate = (snapshot) => {
-    const docs = snapshot.docs.map((docSnapshot) => ({
-      id: docSnapshot.id,
-      data: docSnapshot.data()
-    }));
-    this.setState({
-      taskOpenDocs: docs,
       fetching: false
     });
   }
@@ -173,17 +134,6 @@ class App extends Component {
     });
   }
 
-  onLoadedTasksColUpdate = (snapshot) => {
-    const docs = snapshot.docs.map((docSnapshot) => ({
-      id: docSnapshot.id,
-      data: docSnapshot.data()
-    }));
-    this.setState({
-      taskLoadedDocs: docs,
-      fetching: false
-    });
-  }
-
   onTaskingsColUpdate = (snapshot) => {
     const docs = snapshot.docs.map((docSnapshot) => ({
       id: docSnapshot.id,
@@ -199,11 +149,9 @@ class App extends Component {
     return (
       <Dashboard 
         institution={this.state.institutionDocs}
-        openTasks={this.state.taskOpenDocs}
         dispatchedTasks={this.state.taskDispatchedDocs}
         fetchedTasks={this.state.taskFetchedDocs}
         parsedTasks={this.state.taskParsedDocs}
-        loadedTasks={this.state.taskLoadedDocs}
         taskings={this.state.taskingsDocs}/>
     );
   }
